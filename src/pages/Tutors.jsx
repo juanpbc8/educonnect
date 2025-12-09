@@ -81,7 +81,7 @@ function Tutors() {
   const filteredTutors = useMemo(() => {
     return tutors.filter(tutor => {
       // Subject filter
-      if (filters.subject && !tutor.subjects.includes(filters.subject)) {
+      if (filters.subject && tutor.subjects && !tutor.subjects.includes(filters.subject)) {
         return false;
       }
 
@@ -106,7 +106,7 @@ function Tutors() {
       }
 
       // Modality filter
-      if (filters.modality && !tutor.modality.includes(filters.modality)) {
+      if (filters.modality && tutor.modality && !tutor.modality.includes(filters.modality)) {
         return false;
       }
 
@@ -114,10 +114,10 @@ function Tutors() {
       if (searchQuery) {
         const query = searchQuery.toLowerCase();
         const searchableText = [
-          tutor.fullName,
-          tutor.bio,
-          tutor.specialty,
-          ...tutor.subjects
+          tutor.fullName || '',
+          tutor.bio || '',
+          tutor.specialty || '',
+          ...(tutor.subjects || [])
         ].join(' ').toLowerCase();
 
         if (!searchableText.includes(query)) {

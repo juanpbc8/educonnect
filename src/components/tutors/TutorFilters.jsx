@@ -22,6 +22,7 @@ function TutorFilters({
         </h5>
         {(filters.subject || filters.university || filters.minPrice || filters.maxPrice || filters.minRating || filters.modality) && (
           <button 
+            type="button"
             className="btn btn-sm btn-outline-secondary"
             onClick={onClearFilters}
           >
@@ -137,6 +138,7 @@ function TutorFilters({
               className="btn-check"
               name="modality"
               id="modalityAll"
+              autoComplete="off"
               checked={!filters.modality}
               onChange={() => handleInputChange('modality', '')}
             />
@@ -149,6 +151,7 @@ function TutorFilters({
               className="btn-check"
               name="modality"
               id="modalityPresencial"
+              autoComplete="off"
               checked={filters.modality === 'Presencial'}
               onChange={() => handleInputChange('modality', 'Presencial')}
             />
@@ -162,6 +165,7 @@ function TutorFilters({
               className="btn-check"
               name="modality"
               id="modalityVirtual"
+              autoComplete="off"
               checked={filters.modality === 'Virtual'}
               onChange={() => handleInputChange('modality', 'Virtual')}
             />
@@ -182,6 +186,7 @@ function TutorFilters({
                   <span className="badge bg-primary">
                     Materia: {filters.subject}
                     <button 
+                      type="button"
                       className="btn-close btn-close-white ms-2" 
                       style={{ fontSize: '0.6rem' }}
                       onClick={() => handleInputChange('subject', '')}
@@ -193,6 +198,7 @@ function TutorFilters({
                   <span className="badge bg-primary">
                     Universidad: {filters.university}
                     <button 
+                      type="button"
                       className="btn-close btn-close-white ms-2" 
                       style={{ fontSize: '0.6rem' }}
                       onClick={() => handleInputChange('university', '')}
@@ -204,6 +210,7 @@ function TutorFilters({
                   <span className="badge bg-success">
                     Precio: S/. {filters.minPrice || '0'} - {filters.maxPrice || '∞'}
                     <button 
+                      type="button"
                       className="btn-close btn-close-white ms-2" 
                       style={{ fontSize: '0.6rem' }}
                       onClick={() => {
@@ -218,6 +225,7 @@ function TutorFilters({
                   <span className="badge bg-warning text-dark">
                     Rating: {filters.minRating}+ ⭐
                     <button 
+                      type="button"
                       className="btn-close ms-2" 
                       style={{ fontSize: '0.6rem' }}
                       onClick={() => handleInputChange('minRating', '')}
@@ -229,6 +237,7 @@ function TutorFilters({
                   <span className="badge bg-info">
                     Modalidad: {filters.modality}
                     <button 
+                      type="button"
                       className="btn-close btn-close-white ms-2" 
                       style={{ fontSize: '0.6rem' }}
                       onClick={() => handleInputChange('modality', '')}

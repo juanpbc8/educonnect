@@ -315,47 +315,40 @@
     },
     {
       "id": 2,
-      "nombre": "María Quispe Flores",
-      "usuario": "maria_quispe",
-      "universidad": "UNMSM",
-      "carrera": "Medicina",
-      "semestre": "Egresada",
-      "tipo": "Egresada",
-      "materias": [
+      "fullName": "María Quispe Flores",
+      "userId": "maria_quispe",
+      "university": "UNMSM",
+      "universityFull": "Universidad Nacional Mayor de San Marcos",
+      "career": "Medicina",
+      "semester": "Egresada",
+      "tutorType": "graduate",
+      "tutorTypeLabel": "Egresada",
+      "subjects": [
         "Anatomía",
         "Fisiología",
         "Biología",
         "Química General"
       ],
+      "specialty": "Ciencias Básicas de Medicina",
       "rating": 4.9,
-      "reviews": 73,
-      "precio_hora": 35,
-      "descripcion": "Médico recién egresada con alto rendimiento académico. Especializada en ciencias básicas de medicina con metodología didáctica probada.",
-      "experiencia": "3 años de experiencia como tutora",
-      "disponibilidad": {
-        "lunes": [
-          "18:00-21:00"
-        ],
-        "martes": [
-          "18:00-21:00"
-        ],
-        "miercoles": [
-          "18:00-21:00"
-        ],
-        "viernes": [
-          "16:00-20:00"
-        ],
-        "sabado": [
-          "09:00-13:00"
-        ]
+      "reviewsCount": 73,
+      "pricePerHour": 35,
+      "currency": "S/.",
+      "bio": "Médico recién egresada con alto rendimiento académico. Especializada en ciencias básicas de medicina con metodología didáctica probada.",
+      "experience": "3 años de experiencia como tutora",
+      "isVerified": true,
+      "availability": {
+        "lunes": ["18:00-21:00"],
+        "martes": ["18:00-21:00"],
+        "miercoles": ["18:00-21:00"],
+        "viernes": ["16:00-20:00"],
+        "sabado": ["09:00-13:00"]
       },
-      "modalidad": [
-        "Virtual"
-      ],
-      "ubicacion": "Ciudad Universitaria, Lima",
-      "telefono": "+51 976 543 210",
+      "modality": ["Virtual"],
+      "location": "Ciudad Universitaria, Lima",
+      "phone": "+51 976 543 210",
       "email": "maria.quispe@unmsm.edu.pe",
-      "foto": "/avatars/maria.jpg"
+      "profileImage": ""
     },
     {
       "id": 3,
