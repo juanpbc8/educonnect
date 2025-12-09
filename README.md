@@ -105,10 +105,6 @@ educonnect/
 │   ├── App.css                 # Estilos del App
 │   ├── main.jsx                # Punto de entrada
 │   └── index.css               # Estilos base
-├── COMPONENTS_GUIDE.md         # Guía de componentes
-├── FORUM_MIGRATION.md          # Documentación migración foro
-├── TUTORS_MIGRATION.md         # Documentación migración tutorías
-├── RESOURCES_MIGRATION.md      # Documentación migración recursos
 ├── package.json
 ├── vite.config.js
 └── README.md                   # Este archivo
@@ -288,17 +284,6 @@ export default defineConfig({
 - Reglas de React Hooks habilitadas
 - Warnings para console.log en producción
 - Auto-fix de problemas de formato
-
----
-
-## 📚 Documentación Adicional
-
-Para información detallada sobre la migración y arquitectura:
-
-1. **[COMPONENTS_GUIDE.md](./COMPONENTS_GUIDE.md)**: Guía completa de componentes
-2. **[FORUM_MIGRATION.md](./FORUM_MIGRATION.md)**: Migración del foro (850+ líneas)
-3. **[TUTORS_MIGRATION.md](./TUTORS_MIGRATION.md)**: Migración de tutorías (1000+ líneas)
-4. **[RESOURCES_MIGRATION.md](./RESOURCES_MIGRATION.md)**: Migración de recursos
 
 ---
 
