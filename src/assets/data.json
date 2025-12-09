@@ -1,0 +1,872 @@
+{
+  "universidades": [
+    {
+      "id": 1,
+      "nombre": "Universidad Tecnológica del Perú",
+      "sigla": "UTP",
+      "tipo": "privada",
+      "ciudad": "Lima"
+    },
+    {
+      "id": 2,
+      "nombre": "Universidad Nacional Mayor de San Marcos",
+      "sigla": "UNMSM",
+      "tipo": "publica",
+      "ciudad": "Lima"
+    },
+    {
+      "id": 3,
+      "nombre": "Universidad Peruana de Ciencias Aplicadas",
+      "sigla": "UPC",
+      "tipo": "privada",
+      "ciudad": "Lima"
+    },
+    {
+      "id": 4,
+      "nombre": "Universidad Nacional de Ingeniería",
+      "sigla": "UNI",
+      "tipo": "publica",
+      "ciudad": "Lima"
+    },
+    {
+      "id": 5,
+      "nombre": "Pontificia Universidad Católica del Perú",
+      "sigla": "PUCP",
+      "tipo": "privada",
+      "ciudad": "Lima"
+    },
+    {
+      "id": 6,
+      "nombre": "Universidad Nacional de Trujillo",
+      "sigla": "UNT",
+      "tipo": "publica",
+      "ciudad": "Trujillo"
+    },
+    {
+      "id": 7,
+      "nombre": "Universidad San Martín de Porres",
+      "sigla": "USMP",
+      "tipo": "privada",
+      "ciudad": "Lima"
+    }
+  ],
+  "carreras": [
+    "Ingeniería de Sistemas",
+    "Medicina",
+    "Derecho",
+    "Administración",
+    "Psicología",
+    "Contabilidad",
+    "Ingeniería Civil",
+    "Arquitectura",
+    "Economía",
+    "Marketing",
+    "Ingeniería Industrial",
+    "Educación",
+    "Enfermería",
+    "Comunicaciones",
+    "Ingeniería Electrónica"
+  ],
+  "materias": [
+    "Cálculo I",
+    "Cálculo II",
+    "Álgebra Lineal",
+    "Física I",
+    "Física II",
+    "Programación",
+    "Base de Datos",
+    "Estadística",
+    "Química General",
+    "Biología",
+    "Anatomía",
+    "Microeconomía",
+    "Macroeconomía",
+    "Derecho Civil",
+    "Derecho Penal",
+    "Marketing Digital",
+    "Finanzas",
+    "Contabilidad General",
+    "Resistencia de Materiales",
+    "Estructuras"
+  ],
+  "recursos": [
+    {
+      "id": 1,
+      "titulo": "Exámenes Resueltos - Cálculo I",
+      "tipo": "PDF",
+      "descripcion": "Colección completa de 15 exámenes parciales y finales resueltos paso a paso. Incluye problemas de límites, derivadas e integrales básicas.",
+      "universidadSigla": "UTP",
+      "universidadNombre": "Universidad Tecnológica del Perú",
+      "carrera": "Ingeniería de Sistemas",
+      "materia": "Cálculo I",
+      "autor": "Carlos Mendoza",
+      "profesor": "Dr. García",
+      "descargas": 1245,
+      "likes": 89,
+      "rating": 95,
+      "fecha": "2024-10-15",
+      "tags": [
+        "calculo",
+        "examenes",
+        "matematicas",
+        "resueltos"
+      ],
+      "url": "#"
+    },
+    {
+      "id": 2,
+      "titulo": "Manual Práctico - Programación en Java",
+      "tipo": "Guía",
+      "descripcion": "Guía práctica con ejercicios progresivos desde conceptos básicos hasta programación orientada a objetos. Incluye proyectos completos.",
+      "universidadSigla": "UNMSM",
+      "universidadNombre": "Universidad Nacional Mayor de San Marcos",
+      "carrera": "Ingeniería de Sistemas",
+      "materia": "Programación",
+      "autor": "María Quispe",
+      "profesor": "Ing. Rodríguez",
+      "descargas": 892,
+      "likes": 67,
+      "rating": 88,
+      "fecha": "2024-10-20",
+      "tags": [
+        "java",
+        "programacion",
+        "oop",
+        "ejercicios"
+      ],
+      "url": "#"
+    },
+    {
+      "id": 3,
+      "titulo": "Formulario - Física Mecánica",
+      "tipo": "Formulario",
+      "descripcion": "Formulario completo de física mecánica con todas las ecuaciones organizadas por temas: cinemática, dinámica, trabajo y energía.",
+      "universidadSigla": "UNI",
+      "universidadNombre": "Universidad Nacional de Ingeniería",
+      "carrera": "Ingeniería Civil",
+      "materia": "Física I",
+      "autor": "José Paredes",
+      "profesor": "Dr. Vásquez",
+      "descargas": 567,
+      "likes": 45,
+      "rating": 82,
+      "fecha": "2024-10-18",
+      "tags": [
+        "fisica",
+        "formulas",
+        "mecanica",
+        "referencia"
+      ],
+      "url": "#"
+    },
+    {
+      "id": 4,
+      "titulo": "Apuntes Completos - Anatomía Humana",
+      "tipo": "Apuntes",
+      "descripcion": "Apuntes detallados de todas las clases del semestre con diagramas, esquemas y resúmenes de cada sistema del cuerpo humano.",
+      "universidadSigla": "UNMSM",
+      "universidadNombre": "Universidad Nacional Mayor de San Marcos",
+      "carrera": "Medicina",
+      "materia": "Anatomía",
+      "autor": "Ana Torres",
+      "profesor": "Dr. Sánchez",
+      "descargas": 723,
+      "likes": 78,
+      "rating": 91,
+      "fecha": "2024-10-12",
+      "tags": [
+        "anatomia",
+        "medicina",
+        "apuntes",
+        "diagramas"
+      ],
+      "url": "#"
+    },
+    {
+      "id": 5,
+      "titulo": "Presentación - Derecho Constitucional",
+      "tipo": "Presentación",
+      "descripcion": "Presentación completa sobre los principios fundamentales del derecho constitucional peruano con casos prácticos y jurisprudencia.",
+      "universidadSigla": "PUCP",
+      "universidadNombre": "Pontificia Universidad Católica del Perú",
+      "carrera": "Derecho",
+      "materia": "Derecho Civil",
+      "autor": "Roberto Flores",
+      "profesor": "Dr. Morales",
+      "descargas": 234,
+      "likes": 23,
+      "rating": 75,
+      "fecha": "2024-10-22",
+      "tags": [
+        "derecho",
+        "constitucion",
+        "peru",
+        "casos"
+      ],
+      "url": "#"
+    },
+    {
+      "id": 6,
+      "titulo": "Ejercicios - Álgebra Lineal",
+      "tipo": "Ejercicios",
+      "descripcion": "Set de 50 ejercicios resueltos de matrices, determinantes, sistemas de ecuaciones y espacios vectoriales con explicaciones detalladas.",
+      "universidadSigla": "UTP",
+      "universidadNombre": "Universidad Tecnológica del Perú",
+      "carrera": "Ingeniería Industrial",
+      "materia": "Álgebra Lineal",
+      "autor": "Carmen Silva",
+      "profesor": "Mg. López",
+      "descargas": 445,
+      "likes": 52,
+      "rating": 86,
+      "fecha": "2024-10-16",
+      "tags": [
+        "algebra",
+        "matrices",
+        "vectores",
+        "ejercicios"
+      ],
+      "url": "#"
+    },
+    {
+      "id": 7,
+      "titulo": "Resumen - Microeconomía Intermedia",
+      "tipo": "Resumen",
+      "descripcion": "Resumen conceptual de teoría del consumidor, teoría de la firma, estructuras de mercado y fallas de mercado con gráficos explicativos.",
+      "universidadSigla": "UPC",
+      "universidadNombre": "Universidad Peruana de Ciencias Aplicadas",
+      "carrera": "Economía",
+      "materia": "Microeconomía",
+      "autor": "Diego Ramírez",
+      "profesor": "Ec. Vargas",
+      "descargas": 312,
+      "likes": 34,
+      "rating": 79,
+      "fecha": "2024-10-14",
+      "tags": [
+        "economia",
+        "microeconomia",
+        "mercados",
+        "teoria"
+      ],
+      "url": "#"
+    },
+    {
+      "id": 8,
+      "titulo": "Laboratorio - Química Orgánica",
+      "tipo": "Guía",
+      "descripcion": "Guía completa de laboratorio con procedimientos, medidas de seguridad, cálculos y análisis de resultados para todas las prácticas.",
+      "universidadSigla": "UNMSM",
+      "universidadNombre": "Universidad Nacional Mayor de San Marcos",
+      "carrera": "Química",
+      "materia": "Química General",
+      "autor": "Patricia Mendoza",
+      "profesor": "Dr. Castro",
+      "descargas": 198,
+      "likes": 28,
+      "rating": 84,
+      "fecha": "2024-10-19",
+      "tags": [
+        "quimica",
+        "laboratorio",
+        "organica",
+        "practicas"
+      ],
+      "url": "#"
+    }
+  ],
+  "tutores": [
+    {
+      "id": 1,
+      "fullName": "Carlos Mendoza Pérez",
+      "userId": "carlos_mendoza",
+      "university": "UTP",
+      "universityFull": "Universidad Tecnológica del Perú",
+      "career": "Ingeniería de Sistemas",
+      "semester": "9no semestre",
+      "tutorType": "advanced_student",
+      "tutorTypeLabel": "Estudiante Avanzado",
+      "subjects": [
+        "Cálculo I",
+        "Cálculo II",
+        "Álgebra Lineal",
+        "Programación"
+      ],
+      "specialty": "Matemáticas y Programación",
+      "rating": 4.8,
+      "reviewsCount": 45,
+      "pricePerHour": 25,
+      "currency": "S/.",
+      "bio": "Estudiante de últimos ciclos con experiencia en tutorías de matemáticas y programación. Especializado en explicar conceptos complejos de manera sencilla.",
+      "experience": "2 años de experiencia como tutor",
+      "isVerified": true,
+      "availability": {
+        "lunes": ["14:00-18:00"],
+        "martes": ["16:00-20:00"],
+        "miercoles": ["14:00-18:00"],
+        "jueves": ["16:00-20:00"],
+        "viernes": ["14:00-17:00"]
+      },
+      "modality": ["Presencial", "Virtual"],
+      "location": "San Miguel, Lima",
+      "phone": "+51 987 654 321",
+      "email": "carlos.mendoza@utp.edu.pe",
+      "profileImage": ""
+    },
+    {
+      "id": 2,
+      "nombre": "María Quispe Flores",
+      "usuario": "maria_quispe",
+      "universidad": "UNMSM",
+      "carrera": "Medicina",
+      "semestre": "Egresada",
+      "tipo": "Egresada",
+      "materias": [
+        "Anatomía",
+        "Fisiología",
+        "Biología",
+        "Química General"
+      ],
+      "rating": 4.9,
+      "reviews": 73,
+      "precio_hora": 35,
+      "descripcion": "Médico recién egresada con alto rendimiento académico. Especializada en ciencias básicas de medicina con metodología didáctica probada.",
+      "experiencia": "3 años de experiencia como tutora",
+      "disponibilidad": {
+        "lunes": [
+          "18:00-21:00"
+        ],
+        "martes": [
+          "18:00-21:00"
+        ],
+        "miercoles": [
+          "18:00-21:00"
+        ],
+        "viernes": [
+          "16:00-20:00"
+        ],
+        "sabado": [
+          "09:00-13:00"
+        ]
+      },
+      "modalidad": [
+        "Virtual"
+      ],
+      "ubicacion": "Ciudad Universitaria, Lima",
+      "telefono": "+51 976 543 210",
+      "email": "maria.quispe@unmsm.edu.pe",
+      "foto": "/avatars/maria.jpg"
+    },
+    {
+      "id": 3,
+      "fullName": "Dr. Roberto Vásquez Luna",
+      "userId": "dr_vasquez",
+      "university": "UNI",
+      "universityFull": "Universidad Nacional de Ingeniería",
+      "career": "Ingeniería Civil",
+      "semester": "Profesor",
+      "tutorType": "professor",
+      "tutorTypeLabel": "Profesor Universitario",
+      "subjects": [
+        "Física I",
+        "Física II",
+        "Resistencia de Materiales",
+        "Estructuras"
+      ],
+      "specialty": "Física Aplicada a Ingeniería",
+      "rating": 4.7,
+      "reviewsCount": 28,
+      "pricePerHour": 50,
+      "currency": "S/.",
+      "bio": "Profesor universitario con 15 años de experiencia en docencia. Especialista en física aplicada a la ingeniería con enfoque práctico.",
+      "experience": "15 años de experiencia docente",
+      "isVerified": true,
+      "availability": {
+        "sabado": ["09:00-12:00", "14:00-17:00"],
+        "domingo": ["09:00-12:00"]
+      },
+      "modality": ["Presencial", "Virtual"],
+      "location": "Rímac, Lima",
+      "phone": "+51 965 432 109",
+      "email": "rvasquez@uni.edu.pe",
+      "profileImage": ""
+    },
+    {
+      "id": 4,
+      "fullName": "Ana Torres Silva",
+      "userId": "ana_torres",
+      "university": "PUCP",
+      "universityFull": "Pontificia Universidad Católica del Perú",
+      "career": "Psicología",
+      "semester": "8vo semestre",
+      "tutorType": "advanced_student",
+      "tutorTypeLabel": "Estudiante Avanzado",
+      "subjects": [
+        "Estadística",
+        "Metodología de Investigación",
+        "Psicología General"
+      ],
+      "specialty": "Estadística e Investigación",
+      "rating": 4.6,
+      "reviewsCount": 32,
+      "pricePerHour": 28,
+      "currency": "S/.",
+      "bio": "Estudiante destacada con experiencia en investigación. Especializada en estadística aplicada y metodología de investigación científica.",
+      "experience": "1.5 años de experiencia como tutora",
+      "isVerified": false,
+      "availability": {
+        "lunes": ["19:00-22:00"],
+        "miercoles": ["19:00-22:00"],
+        "viernes": ["19:00-22:00"],
+        "sabado": ["10:00-14:00"]
+      },
+      "modality": ["Virtual"],
+      "location": "San Isidro, Lima",
+      "phone": "+51 954 321 098",
+      "email": "ana.torres@pucp.edu.pe",
+      "profileImage": ""
+    },
+    {
+      "id": 5,
+      "fullName": "Jorge Paredes Ramos",
+      "userId": "jorge_paredes",
+      "university": "UPC",
+      "universityFull": "Universidad Peruana de Ciencias Aplicadas",
+      "career": "Administración",
+      "semester": "Egresado",
+      "tutorType": "graduate",
+      "tutorTypeLabel": "Egresado",
+      "subjects": [
+        "Marketing",
+        "Finanzas",
+        "Contabilidad General",
+        "Microeconomía"
+      ],
+      "specialty": "Negocios y Finanzas",
+      "rating": 4.5,
+      "reviewsCount": 19,
+      "pricePerHour": 30,
+      "currency": "S/.",
+      "bio": "Administrador con experiencia laboral en empresas. Combina teoría académica con casos prácticos del mundo empresarial peruano.",
+      "experience": "2 años de experiencia como tutor",
+      "isVerified": true,
+      "availability": {
+        "martes": ["20:00-22:00"],
+        "jueves": ["20:00-22:00"],
+        "sabado": ["16:00-20:00"],
+        "domingo": ["10:00-14:00"]
+      },
+      "modality": ["Presencial", "Virtual"],
+      "location": "Monterrico, Lima",
+      "phone": "+51 943 210 987",
+      "email": "jorge.paredes@upc.edu.pe",
+      "profileImage": ""
+    },
+    {
+      "id": 6,
+      "fullName": "Carmen Silva Morales",
+      "userId": "carmen_silva",
+      "university": "USMP",
+      "universityFull": "Universidad San Martín de Porres",
+      "career": "Derecho",
+      "semester": "10mo semestre",
+      "tutorType": "advanced_student",
+      "tutorTypeLabel": "Estudiante Avanzado",
+      "subjects": [
+        "Derecho Civil",
+        "Derecho Penal",
+        "Derecho Constitucional"
+      ],
+      "specialty": "Derecho Civil y Penal",
+      "rating": 4.7,
+      "reviewsCount": 25,
+      "pricePerHour": 32,
+      "currency": "S/.",
+      "bio": "Estudiante de derecho con excelente rendimiento académico. Especializada en derecho civil y penal con enfoque en legislación peruana.",
+      "experience": "2 años de experiencia como tutora",
+      "isVerified": false,
+      "availability": {
+        "lunes": ["17:00-20:00"],
+        "miercoles": ["17:00-20:00"],
+        "viernes": ["17:00-20:00"],
+        "sabado": ["09:00-13:00"]
+      },
+      "modality": ["Presencial", "Virtual"],
+      "location": "Santa Anita, Lima",
+      "phone": "+51 932 109 876",
+      "email": "carmen.silva@usmp.pe",
+      "profileImage": ""
+    },
+    {
+      "id": 7,
+      "fullName": "Luis Ramírez García",
+      "userId": "luis_ramirez",
+      "university": "UTP",
+      "universityFull": "Universidad Tecnológica del Perú",
+      "career": "Ingeniería Electrónica",
+      "semester": "Egresado",
+      "tutorType": "graduate",
+      "tutorTypeLabel": "Egresado",
+      "subjects": [
+        "Física I",
+        "Física II",
+        "Circuitos Eléctricos",
+        "Electromagnetismo"
+      ],
+      "specialty": "Física y Electrónica",
+      "rating": 4.8,
+      "reviewsCount": 41,
+      "pricePerHour": 35,
+      "currency": "S/.",
+      "bio": "Ingeniero electrónico con maestría en telecomunicaciones. Especialista en física aplicada y circuitos. Profesor part-time en UTP.",
+      "experience": "4 años de experiencia como tutor",
+      "isVerified": true,
+      "availability": {
+        "lunes": ["19:00-22:00"],
+        "miercoles": ["19:00-22:00"],
+        "viernes": ["19:00-22:00"],
+        "sabado": ["10:00-14:00"]
+      },
+      "modality": ["Presencial", "Virtual"],
+      "location": "Los Olivos, Lima",
+      "phone": "+51 991 234 567",
+      "email": "luis.ramirez@utp.edu.pe",
+      "profileImage": ""
+    },
+    {
+      "id": 8,
+      "fullName": "Patricia Mendoza Ruiz",
+      "userId": "patricia_mendoza",
+      "university": "UNMSM",
+      "universityFull": "Universidad Nacional Mayor de San Marcos",
+      "career": "Química",
+      "semester": "Docente",
+      "tutorType": "professor",
+      "tutorTypeLabel": "Profesora",
+      "subjects": [
+        "Química General",
+        "Química Orgánica",
+        "Bioquímica"
+      ],
+      "specialty": "Química y Bioquímica",
+      "rating": 4.9,
+      "reviewsCount": 67,
+      "pricePerHour": 45,
+      "currency": "S/.",
+      "bio": "Doctora en Química con 12 años de experiencia en docencia universitaria. Metodología enfocada en aprendizaje práctico y resolución de problemas.",
+      "experience": "12 años de experiencia docente",
+      "isVerified": true,
+      "availability": {
+        "martes": ["17:00-20:00"],
+        "jueves": ["17:00-20:00"],
+        "sabado": ["09:00-13:00"]
+      },
+      "modality": ["Virtual"],
+      "location": "Ciudad Universitaria, Lima",
+      "phone": "+51 987 123 456",
+      "email": "pmendoza@unmsm.edu.pe",
+      "profileImage": ""
+    }
+  ],
+  "grupos_estudio": [
+    {
+      "id": 1,
+      "nombre": "Cálculo Intensivo UTP",
+      "descripcion": "Grupo para preparación de examen final de Cálculo I. Nos reunimos 3 veces por semana para resolver ejercicios.",
+      "materia": "Cálculo I",
+      "universidad": "UTP",
+      "creador": "Carlos Mendoza",
+      "miembros": 8,
+      "max_miembros": 12,
+      "fecha_creacion": "2024-10-01",
+      "horario": "Lunes, Miércoles y Viernes 6:00-8:00 PM",
+      "modalidad": "Híbrida",
+      "ubicacion": "Campus UTP - Aula A301",
+      "estado": "Activo",
+      "tags": [
+        "calculo",
+        "examen",
+        "intensivo"
+      ]
+    },
+    {
+      "id": 2,
+      "nombre": "Programadores Java UNMSM",
+      "descripcion": "Grupo para practicar programación en Java. Realizamos proyectos grupales y compartimos conocimientos.",
+      "materia": "Programación",
+      "universidad": "UNMSM",
+      "creador": "María Quispe",
+      "miembros": 15,
+      "max_miembros": 20,
+      "fecha_creacion": "2024-09-15",
+      "horario": "Sábados 2:00-5:00 PM",
+      "modalidad": "Virtual",
+      "ubicacion": "Discord/Zoom",
+      "estado": "Activo",
+      "tags": [
+        "java",
+        "programacion",
+        "proyectos"
+      ]
+    },
+    {
+      "id": 3,
+      "nombre": "Anatomía Visual",
+      "descripcion": "Estudiamos anatomía usando modelos 3D y atlas digitales. Perfecto para medicina y carreras afines.",
+      "materia": "Anatomía",
+      "universidad": "UNMSM",
+      "creador": "Ana Torres",
+      "miembros": 6,
+      "max_miembros": 10,
+      "fecha_creacion": "2024-10-10",
+      "horario": "Martes y Jueves 7:00-9:00 PM",
+      "modalidad": "Presencial",
+      "ubicacion": "Biblioteca Central UNMSM",
+      "estado": "Activo",
+      "tags": [
+        "anatomia",
+        "medicina",
+        "visual"
+      ]
+    },
+    {
+      "id": 4,
+      "nombre": "Física para Ingenieros UNI",
+      "descripcion": "Resolvemos problemas avanzados de física aplicada a la ingeniería. Preparación para exámenes y concursos.",
+      "materia": "Física I",
+      "universidad": "UNI",
+      "creador": "José Paredes",
+      "miembros": 12,
+      "max_miembros": 15,
+      "fecha_creacion": "2024-09-20",
+      "horario": "Miércoles y Sábados 4:00-6:00 PM",
+      "modalidad": "Presencial",
+      "ubicacion": "Laboratorio de Física UNI",
+      "estado": "Activo",
+      "tags": [
+        "fisica",
+        "ingenieria",
+        "problemas"
+      ]
+    }
+  ],
+  "foro_posts": [
+    {
+      "id": 1,
+      "title": "¿Alguien tiene el solucionario de Cálculo de Stewart?",
+      "content": "Hola, estoy buscando el solucionario completo del libro de James Stewart para Cálculo I. ¿Alguien lo tiene o sabe dónde conseguirlo?",
+      "authorId": "carlos_mendoza",
+      "authorName": "Carlos Mendoza",
+      "universidadSigla": "UTP",
+      "carrera": "Ingeniería de Sistemas",
+      "categoryId": 2,
+      "categoryName": "Recursos",
+      "materia": "Cálculo I",
+      "date": "2024-10-25T10:30:00Z",
+      "stats": {
+        "views": 234,
+        "likes": 12,
+        "replies": 8
+      },
+      "tags": [
+        "calculo",
+        "stewart",
+        "solucionario"
+      ],
+      "status": "open",
+      "replies": [
+        {
+          "id": 1,
+          "authorId": "maria_estudiante",
+          "authorName": "María Estudiante",
+          "content": "Yo tengo una versión parcial, te puedo pasar los primeros 5 capítulos. Escríbeme por mensaje privado.",
+          "date": "2024-10-25T11:15:00Z",
+          "likes": 5
+        },
+        {
+          "id": 2,
+          "authorId": "profesor_garcia",
+          "authorName": "Prof. García",
+          "content": "Recuerden que es importante resolver los ejercicios por ustedes mismos. El solucionario debe ser solo para verificar respuestas.",
+          "date": "2024-10-25T14:20:00Z",
+          "likes": 15
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Dudas sobre punteros en C++",
+      "content": "No entiendo bien el concepto de punteros y referencias en C++. ¿Alguien me puede explicar con ejemplos simples? Especialmente la diferencia entre * y &.",
+      "authorId": "ana_novata",
+      "authorName": "Ana Novata",
+      "universidadSigla": "UPC",
+      "carrera": "Ingeniería de Sistemas",
+      "categoryId": 1,
+      "categoryName": "Consultas Académicas",
+      "materia": "Programación",
+      "date": "2024-10-24T16:45:00Z",
+      "stats": {
+        "views": 156,
+        "likes": 8,
+        "replies": 12
+      },
+      "tags": [
+        "cpp",
+        "punteros",
+        "programacion"
+      ],
+      "status": "resolved",
+      "replies": [
+        {
+          "id": 3,
+          "authorId": "jorge_programador",
+          "authorName": "Jorge Programador",
+          "content": "Los punteros son variables que almacenan direcciones de memoria. El * se usa para declarar y desreferenciar, el & para obtener la dirección. ¿Quieres que te haga un ejemplo?",
+          "date": "2024-10-24T17:00:00Z",
+          "likes": 10
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Grupo de estudio para Anatomía - UNMSM",
+      "content": "Estoy formando un grupo de estudio para el examen final de Anatomía. Nos juntaríamos 2 veces por semana en la biblioteca. ¿Quién se apunta?",
+      "authorId": "med_student_2024",
+      "authorName": "Estudiante Medicina 2024",
+      "universidadSigla": "UNMSM",
+      "carrera": "Medicina",
+      "categoryId": 3,
+      "categoryName": "Grupos de Estudio",
+      "materia": "Anatomía",
+      "date": "2024-10-23T09:00:00Z",
+      "stats": {
+        "views": 89,
+        "likes": 15,
+        "replies": 6
+      },
+      "tags": [
+        "anatomia",
+        "grupo",
+        "estudio",
+        "examen"
+      ],
+      "status": "open",
+      "replies": [
+        {
+          "id": 4,
+          "authorId": "ana_medicina",
+          "authorName": "Ana Medicina",
+          "content": "¡Me interesa! ¿Qué días y horarios estás pensando?",
+          "date": "2024-10-23T10:30:00Z",
+          "likes": 3
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "¿Recomendaciones de libros para Microeconomía?",
+      "content": "Mi profesor usa Pindyck pero me parece muy denso. ¿Conocen algún libro más didáctico para entender mejor los conceptos de microeconomía?",
+      "authorId": "eco_student",
+      "authorName": "Estudiante Economía",
+      "universidadSigla": "PUCP",
+      "carrera": "Economía",
+      "categoryId": 2,
+      "categoryName": "Recursos",
+      "materia": "Microeconomía",
+      "date": "2024-10-22T14:20:00Z",
+      "stats": {
+        "views": 178,
+        "likes": 7,
+        "replies": 9
+      },
+      "tags": [
+        "microeconomia",
+        "libros",
+        "recomendaciones"
+      ],
+      "status": "open",
+      "replies": [
+        {
+          "id": 5,
+          "authorId": "profesor_economia",
+          "authorName": "Prof. Economía",
+          "content": "Te recomiendo 'Microeconomía' de Hal Varian. Es más accesible y tiene muchos ejemplos prácticos.",
+          "date": "2024-10-22T15:45:00Z",
+          "likes": 12
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Error en ejercicio de Álgebra Lineal del libro",
+      "content": "En el ejercicio 3.4.7 del libro de Álgebra Lineal de Grossman, creo que hay un error en la respuesta. ¿Alguien más se dio cuenta?",
+      "authorId": "math_lover",
+      "authorName": "Amante de las Mates",
+      "universidadSigla": "UNI",
+      "carrera": "Ingeniería Industrial",
+      "categoryId": 1,
+      "categoryName": "Consultas Académicas",
+      "materia": "Álgebra Lineal",
+      "date": "2024-10-21T20:15:00Z",
+      "stats": {
+        "views": 234,
+        "likes": 18,
+        "replies": 15
+      },
+      "tags": [
+        "algebra",
+        "ejercicio",
+        "error",
+        "grossman"
+      ],
+      "status": "resolved",
+      "replies": [
+        {
+          "id": 6,
+          "authorId": "tutor_matematicas",
+          "authorName": "Tutor Matemáticas",
+          "content": "Tienes razón, ese ejercicio tiene un error de tipeo. La matriz debería ser 3x3, no 2x3. Lo he reportado varias veces.",
+          "date": "2024-10-21T21:00:00Z",
+          "likes": 20
+        }
+      ]
+    }
+  ],
+  "categorias_foro": [
+    {
+      "id": 1,
+      "nombre": "Consultas Académicas",
+      "descripcion": "Preguntas sobre materias, conceptos y ejercicios",
+      "icono": "bi-question-circle",
+      "color": "primary"
+    },
+    {
+      "id": 2,
+      "nombre": "Recursos",
+      "descripcion": "Solicitudes y recomendaciones de material de estudio",
+      "icono": "bi-book",
+      "color": "success"
+    },
+    {
+      "id": 3,
+      "nombre": "Grupos de Estudio",
+      "descripcion": "Formación y búsqueda de grupos de estudio",
+      "icono": "bi-people",
+      "color": "info"
+    },
+    {
+      "id": 4,
+      "nombre": "Tutorías",
+      "descripcion": "Búsqueda y oferta de servicios de tutoría",
+      "icono": "bi-mortarboard",
+      "color": "warning"
+    },
+    {
+      "id": 5,
+      "nombre": "General",
+      "descripcion": "Temas generales sobre vida universitaria",
+      "icono": "bi-chat-dots",
+      "color": "secondary"
+    }
+  ]
+}
