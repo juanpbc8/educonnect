@@ -237,11 +237,12 @@ function Tutors() {
             {/* Tutors Grid */}
             {filteredTutors.length > 0 ? (
               <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-                {filteredTutors.map(tutor => (
+                {filteredTutors.map((tutor, index) => (
                   <div key={tutor.id} className="col">
                     <TutorCard 
                       tutor={tutor} 
                       onContact={handleContactTutor}
+                      isPromoted={index < 2}
                     />
                   </div>
                 ))}

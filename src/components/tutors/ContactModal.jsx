@@ -299,21 +299,42 @@ function ContactModal({ show, onHide, tutor }) {
 
             {/* Modal Footer */}
             <div className="modal-footer">
-              <button 
-                type="button" 
-                className="btn btn-secondary" 
-                onClick={handleClose}
-              >
-                Cancelar
-              </button>
-              <button 
-                type="submit" 
-                className="btn btn-primary"
-                form="contactForm"
-              >
-                <i className="bi bi-send me-2"></i>
-                Enviar Solicitud
-              </button>
+              <div className="w-100">
+                {/* Price Breakdown */}
+                <div className="bg-light p-3 rounded mb-3">
+                  <div className="d-flex justify-content-between mb-2">
+                    <span className="text-muted">Tarifa del tutor:</span>
+                    <span>{tutor.currency}{tutor.pricePerHour.toFixed(2)}</span>
+                  </div>
+                  <div className="d-flex justify-content-between mb-2">
+                    <span className="text-muted">Comisión de servicio (10%):</span>
+                    <span>{tutor.currency}{(tutor.pricePerHour * 0.10).toFixed(2)}</span>
+                  </div>
+                  <hr className="my-2" />
+                  <div className="d-flex justify-content-between">
+                    <strong>Total por hora:</strong>
+                    <strong>{tutor.currency}{(tutor.pricePerHour + tutor.pricePerHour * 0.10).toFixed(2)}</strong>
+                  </div>
+                </div>
+                
+                <div className="d-flex justify-content-end gap-2">
+                  <button 
+                    type="button" 
+                    className="btn btn-secondary" 
+                    onClick={handleClose}
+                  >
+                    Cancelar
+                  </button>
+                  <button 
+                    type="submit" 
+                    className="btn btn-primary"
+                    form="contactForm"
+                  >
+                    <i className="bi bi-send me-2"></i>
+                    Enviar Solicitud
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>

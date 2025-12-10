@@ -38,6 +38,12 @@ function Navbar({ onShowAuthModal, onShowUploadModal }) {
           </ul>
           <div className="d-flex align-items-center">
             <button 
+              className="btn btn-outline-warning me-2" 
+              style={{ fontWeight: '600', borderWidth: '2px' }}
+            >
+              <i className="bi bi-gem me-1"></i> Hazte Pro
+            </button>
+            <button 
               className="btn btn-outline-primary me-2" 
               onClick={onShowUploadModal}
             >

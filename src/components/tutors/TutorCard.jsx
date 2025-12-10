@@ -2,7 +2,7 @@
  * TutorCard Component
  * Displays tutor information with trust-building UI elements (verified badge, rating stars)
  */
-function TutorCard({ tutor, onContact }) {
+function TutorCard({ tutor, onContact, isPromoted }) {
   // Generate rating stars
   const generateStars = (rating) => {
     const fullStars = Math.floor(rating);
@@ -47,6 +47,13 @@ function TutorCard({ tutor, onContact }) {
 
   return (
     <div className="card tutor-card h-100">
+      {isPromoted && (
+        <div className="position-absolute top-0 end-0 m-2" style={{ zIndex: 10 }}>
+          <span className="badge bg-light text-muted border text-uppercase" style={{ fontSize: '0.65rem', fontWeight: '600' }}>
+            <i className="bi bi-megaphone me-1"></i>Promocionado
+          </span>
+        </div>
+      )}
       <div className="card-body">
         {/* Header: Avatar + Name + Verified Badge */}
         <div className="text-center mb-3">
