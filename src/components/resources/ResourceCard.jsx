@@ -1,7 +1,9 @@
 import { useState } from 'react';
+import ResourceDetailModal from './ResourceDetailModal';
 
 function ResourceCard({ resource, onLike }) {
   const [isLiked, setIsLiked] = useState(false);
+  const [showModal, setShowModal] = useState(false);
 
   const handleLike = () => {
     setIsLiked(!isLiked);
@@ -47,19 +49,28 @@ function ResourceCard({ resource, onLike }) {
   };
 
   return (
-    <div className="col-md-6 col-lg-4 mb-4">
-      <div className="card resource-card h-100">
-        <div className="card-body d-flex flex-column">
-          {/* Header con icono y título */}
-          <div className="d-flex align-items-start mb-3">
-            <i className={`bi ${getFileIcon(resource.tipo)} me-3`} style={{ fontSize: '2rem' }}></i>
-            <div className="flex-grow-1">
-              <h5 className="card-title mb-2">{resource.titulo}</h5>
-              <span className={`badge ${getTypeClass(resource.tipo)}`}>
-                {resource.tipo}
-              </span>
+    <>
+      <div className="col-md-6 col-lg-4 mb-4">
+        <div className="card resource-card h-100">
+          <div className="card-body d-flex flex-column">
+            {/* Header con icono y título */}
+            <div className="d-flex align-items-start mb-3">
+              <i className={`bi ${getFileIcon(resource.tipo)} me-3`} style={{ fontSize: '2rem' }}></i>
+              <div className="flex-grow-1">
+                <h5 
+                  className="card-title mb-2" 
+                  style={{ cursor: 'pointer' }}
+                  onClick={() => setShowModal(true)}
+                  onMouseEnter={(e) => e.target.style.color = '#2563eb'}
+                  onMouseLeave={(e) => e.target.style.color = ''}
+                >
+                  {resource.titulo}
+                </h5>
+                <span className={`badge ${getTypeClass(resource.tipo)}`}>
+                  {resource.tipo}
+                </span>
+              </div>
             </div>
-          </div>
 
           {/* Descripción */}
           <p className="card-text text-gray mb-3 flex-grow-1">
@@ -130,8 +141,13 @@ function ResourceCard({ resource, onLike }) {
             </div>
             <div className="d-flex gap-2 align-items-center">
               <span className="badge bg-light text-dark">{resource.rating}%</span>
-              <button className="btn btn-primary btn-sm">
-                <i className="bi bi-download"></i>
+              <button 
+                className="btn btn-primary btn-sm"
+                onClick={() => setShowModal(true)}
+                title="Ver detalles y descargar"
+              >
+                <i className="bi bi-eye me-1"></i>
+                Ver
               </button>
             </div>
           </div>
@@ -149,6 +165,14 @@ function ResourceCard({ resource, onLike }) {
         </div>
       </div>
     </div>
+
+    {/* Resource Detail Modal */}
+    <ResourceDetailModal 
+      show={showModal} 
+      handleClose={() => setShowModal(false)} 
+      resource={resource}
+    />
+  </>
   );
 }
 
