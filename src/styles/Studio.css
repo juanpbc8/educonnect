@@ -1094,3 +1094,425 @@
         transform: scale(1.02) translateY(-5px);
       }
     }
+
+    /* =================================
+       DARK MODE OVERRIDES
+       Bootstrap 5.3+ handles most dark mode automatically via data-bs-theme
+       These overrides fix custom elements and ensure consistency
+       ================================= */
+
+    [data-bs-theme="dark"] {
+      /* Custom Dark Mode Variables */
+      --bg-gradient-primary: linear-gradient(135deg, #1a1d20 0%, #0d6efd 100%);
+      --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+      --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -2px rgba(0, 0, 0, 0.3);
+      
+      /* Card Styling for Dark Mode */
+      .card {
+        border-color: #373b3e !important;
+        background-color: #212529;
+      }
+
+      .card-header {
+        border-color: #373b3e !important;
+      }
+
+      /* Fix explicit bg-light classes that should adapt */
+      .bg-light {
+        background-color: #212529 !important;
+        color: #e0e0e0 !important;
+      }
+
+      /* Hero sections and page headers */
+      .hero-section, 
+      .page-header,
+      .tutors-header,
+      .resources-header {
+        background-color: #1a1d20;
+        color: #e0e0e0;
+      }
+
+      /* Text readability on custom elements */
+      .text-gray {
+        color: #adb5bd !important;
+      }
+
+      /* Navbar adjustments */
+      .navbar {
+        background-color: #1a1d20;
+        border-bottom: 1px solid #373b3e;
+      }
+
+      .navbar-light .navbar-brand {
+        color: #f8f9fa !important;
+      }
+
+      .navbar-light .navbar-nav .nav-link {
+        color: rgba(248, 249, 250, 0.8) !important;
+      }
+
+      .navbar-light .navbar-nav .nav-link:hover,
+      .navbar-light .navbar-nav .nav-link.active {
+        color: #000 !important;
+      }
+
+      /* Resource and Tutor Cards */
+      .resource-card,
+      .tutor-card {
+        background-color: #212529;
+        border-color: #373b3e;
+      }
+
+      .resource-card:hover,
+      .tutor-card:hover {
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+      }
+
+      /* Forum Sidebar */
+      .forum-sidebar .card {
+        background-color: #212529;
+      }
+
+      .list-group-item {
+        background-color: #212529;
+        border-color: #373b3e;
+        color: #e0e0e0;
+      }
+
+      .list-group-item:hover {
+        background-color: #2c3034;
+      }
+
+      .list-group-item.active {
+        background-color: #0d6efd;
+        border-color: #0d6efd;
+      }
+
+      /* Badges adjustments */
+      .badge.bg-light {
+        background-color: #373b3e !important;
+        color: #e0e0e0 !important;
+      }
+
+      /* Modals */
+      .modal-content {
+        background-color: #212529;
+        color: #e0e0e0;
+      }
+
+      .modal-header {
+        border-color: #373b3e;
+      }
+
+      .modal-footer {
+        border-color: #373b3e;
+      }
+
+      /* Forms */
+      .form-control,
+      .form-select {
+        background-color: #2c3034;
+        border-color: #373b3e;
+        color: #e0e0e0;
+      }
+
+      .form-control:focus,
+      .form-select:focus {
+        background-color: #2c3034;
+        border-color: #0d6efd;
+        color: #e0e0e0;
+      }
+
+      /* Dropdown menus */
+      .dropdown-menu {
+        background-color: #212529;
+        border-color: #373b3e;
+      }
+
+      .dropdown-item {
+        color: #e0e0e0;
+      }
+
+      .dropdown-item:hover {
+        background-color: #2c3034;
+        color: #f8f9fa;
+      }
+
+      /* Ad Banners - slightly different background */
+      .ad-banner {
+        background-color: #2c2516 !important;
+        border-color: #524a28 !important;
+      }
+
+      /* Pricing Cards in Dark Mode */
+      .pricing-card {
+        background-color: #212529;
+        border-color: #373b3e;
+      }
+
+      .pricing-card.pro {
+        border-color: #ffc107 !important;
+        box-shadow: 0 10px 30px rgba(255, 193, 7, 0.2) !important;
+      }
+
+      /* Footer and other sections */
+      footer {
+        background-color: #1a1d20;
+        border-top: 1px solid #373b3e;
+      }
+
+      /* Progress bars */
+      .progress {
+        background-color: #373b3e;
+      }
+
+      /* Ensure icon colors remain visible */
+      .text-muted {
+        color: #adb5bd !important;
+      }
+
+      /* Border colors */
+      .border,
+      .border-top,
+      .border-bottom,
+      .border-start,
+      .border-end {
+        border-color: #373b3e !important;
+      }
+
+      /* Table styling if used */
+      .table {
+        color: #e0e0e0;
+        border-color: #373b3e;
+      }
+
+      /* Alert components */
+      .alert {
+        border-color: #373b3e;
+      }
+
+      .alert-light {
+        background-color: #2c3034;
+        border-color: #373b3e;
+        color: #e0e0e0;
+      }
+
+      .alert-info {
+        background-color: #0c2d48;
+        border-color: #0d6efd;
+        color: #e0e0e0;
+      }
+
+      /* Fix text-dark class in dark mode */
+      .text-dark {
+        color: #e0e0e0 !important;
+      }
+
+      /* Fix bg-white in forms */
+      .bg-white,
+      .input-group-text.bg-white {
+        background-color: #2c3034 !important;
+        color: #e0e0e0 !important;
+        border-color: #373b3e !important;
+      }
+
+      /* Navbar toggler visibility */
+      .navbar-toggler {
+        border-color: #6c757d;
+      }
+
+      .navbar-toggler-icon {
+        filter: invert(1);
+      }
+
+      /* Button outline adjustments */
+      .btn-outline-secondary,
+      .btn-outline-primary,
+      .btn-outline-warning {
+        border-color: currentColor;
+      }
+
+      .btn-light {
+        background-color: #373b3e;
+        border-color: #373b3e;
+        color: #e0e0e0;
+      }
+
+      .btn-light:hover {
+        background-color: #495057;
+        border-color: #495057;
+        color: #f8f9fa;
+      }
+
+      /* Resource and Tutor filters */
+      .resource-filters,
+      .tutor-filters {
+        background-color: transparent;
+      }
+
+      .filter-chip {
+        background-color: #2c3034;
+        color: #e0e0e0;
+        border-color: #495057;
+      }
+
+      .filter-chip:hover,
+      .filter-chip.active {
+        background-color: #0d6efd;
+        color: #fff;
+        border-color: #0d6efd;
+      }
+
+      /* Search inputs */
+      .search-input {
+        background-color: #2c3034 !important;
+        border-color: #495057 !important;
+        color: #e0e0e0 !important;
+      }
+
+      .search-input::placeholder {
+        color: #adb5bd !important;
+      }
+
+      /* Resource metadata */
+      .resource-meta {
+        color: #adb5bd;
+      }
+
+      .resource-meta i {
+        color: #6c757d;
+      }
+
+      /* Page headers backgrounds */
+      .tutors-header,
+      .resources-header,
+      .forum-header {
+        background-color: #1a1d20 !important;
+      }
+
+      /* Stats badges in headers */
+      .badge.bg-primary.text-white {
+        background-color: #0d6efd !important;
+        color: #fff !important;
+      }
+
+      /* Tutor type badges */
+      .tutor-type {
+        background-color: #373b3e;
+        color: #e0e0e0;
+      }
+
+      /* Price tag in cards */
+      .price-tag {
+        background-color: #0d6efd;
+        color: #fff;
+      }
+
+      /* Rating stars color */
+      .rating-stars i {
+        color: #ffc107;
+      }
+
+      /* Availability chips */
+      .availability-chip {
+        background-color: #2c3034;
+        color: #e0e0e0;
+        border-color: #495057;
+      }
+
+      /* Forum post cards */
+      .forum-post-card {
+        background-color: #212529;
+        border-color: #373b3e;
+      }
+
+      .forum-post-card:hover {
+        background-color: #2c3034;
+      }
+
+      /* Tag chips */
+      .tag-chip {
+        background-color: #2c3034;
+        color: #e0e0e0;
+        border-color: #495057;
+      }
+
+      /* Sidebar sticky elements */
+      .sticky-top {
+        background-color: #1a1d20;
+      }
+
+      /* Fix placeholder images */
+      .tutor-avatar,
+      .resource-preview {
+        background-color: #2c3034;
+        border-color: #495057;
+      }
+
+      /* Notification dropdown items */
+      .dropdown-menu .dropdown-item {
+        border-color: #373b3e;
+      }
+
+      /* Input group backgrounds */
+      .input-group-text {
+        background-color: #2c3034;
+        border-color: #495057;
+        color: #e0e0e0;
+      }
+
+      /* Pricing modal warning elements */
+      .btn-warning.text-dark {
+        color: #000 !important;
+      }
+
+      .badge.bg-warning.text-dark {
+        color: #000 !important;
+      }
+
+      /* Hero sections gradient override */
+      .hero-section {
+        background: linear-gradient(135deg, #1a1d20 0%, #0d6efd 100%);
+      }
+
+      /* Card titles and text */
+      .card-title {
+        color: #f8f9fa;
+      }
+
+      .card-text {
+        color: #adb5bd;
+      }
+
+      /* Resource and forum filters panel */
+      .resource-filters .form-label,
+      .tutor-filters .form-label {
+        color: #e0e0e0;
+      }
+
+      /* Ensure lead text is visible */
+      .lead {
+        color: #adb5bd;
+      }
+
+      /* Display headings */
+      .display-1, .display-2, .display-3, 
+      .display-4, .display-5, .display-6 {
+        color: #f8f9fa;
+      }
+
+      /* Small text and captions */
+      small,
+      .small {
+        color: #adb5bd;
+      }
+    }
+
+    /* Smooth transitions for theme switching */
+    html[data-bs-theme="dark"],
+    html[data-bs-theme="dark"] body,
+    html[data-bs-theme="dark"] .card,
+    html[data-bs-theme="dark"] .navbar,
+    html[data-bs-theme="dark"] .modal-content {
+      transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    }

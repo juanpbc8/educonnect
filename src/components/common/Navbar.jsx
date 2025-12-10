@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import PricingModal from '../ui/PricingModal';
+import ThemeToggle from './ThemeToggle';
 
 function Navbar({ onShowAuthModal, onShowUploadModal }) {
   const location = useLocation();
@@ -215,6 +216,9 @@ function Navbar({ onShowAuthModal, onShowUploadModal }) {
                   )}
                 </ul>
               </div>
+
+              {/* Theme Toggle */}
+              <ThemeToggle />
 
               <button 
                 className="btn btn-primary" 
