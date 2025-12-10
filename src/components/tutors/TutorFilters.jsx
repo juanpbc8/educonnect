@@ -1,3 +1,5 @@
+import AdBanner from '../common/AdBanner';
+
 /**
  * TutorFilters Component
  * Comprehensive filtering for tutors: subject, university, price range, rating, modality
@@ -250,6 +252,9 @@ function TutorFilters({
           </div>
         )}
       </div>
+
+      {/* Ad Banner - Free Tier */}
+      <AdBanner variant="sidebar" />
     </div>
   );
 }

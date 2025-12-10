@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import AdBanner from '../common/AdBanner';
 
 function ResourceFilters({ 
   universidades, 
@@ -165,6 +166,13 @@ function ResourceFilters({
                 </button>
               ))}
             </div>
+          </div>
+        </div>
+
+        {/* Ad Banner - Free Tier */}
+        <div className="row mt-4">
+          <div className="col-12">
+            <AdBanner variant="horizontal" />
           </div>
         </div>
       </div>

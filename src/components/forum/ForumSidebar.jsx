@@ -1,3 +1,5 @@
+import AdBanner from '../common/AdBanner';
+
 /**
  * ForumSidebar Component
  * Displays forum categories with active state and "Nuevo Tema" button
@@ -100,6 +102,9 @@ function ForumSidebar({
           <p className="text-muted mb-0">Temas activos</p>
         </div>
       </div>
+
+      {/* Ad Banner - Free Tier */}
+      <AdBanner variant="sidebar" />
     </aside>
   );
 }
