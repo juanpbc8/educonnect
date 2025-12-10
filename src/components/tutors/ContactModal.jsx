@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { trackEvent } from '../../utils/analytics';
 
 /**
  * ContactModal Component
@@ -64,6 +65,9 @@ function ContactModal({ show, onHide, tutor }) {
     if (!validateForm()) {
       return;
     }
+
+    // Track conversion event in Google Analytics
+    trackEvent('Tutorias', 'Contactar_Tutor', tutor.fullName);
 
     // Simulate sending request (in real app, this would be an API call)
     console.log('Contacto enviado:', {
