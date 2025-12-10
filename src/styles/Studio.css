@@ -1011,3 +1011,86 @@
     .voice-search-feedback .progress-bar {
       background: linear-gradient(90deg, var(--primary) 0%, var(--accent) 100%);
     }
+
+    /* =================================
+       PRICING MODAL STYLES
+       ================================= */
+
+    /* Pricing Card Base */
+    .pricing-card {
+      position: relative;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border-radius: var(--border-radius);
+      overflow: visible;
+    }
+
+    .pricing-card:hover {
+      transform: translateY(-5px);
+    }
+
+    /* Pro Plan Card - The Hero */
+    .pricing-card.pro {
+      border: 2px solid var(--warning) !important;
+      box-shadow: 0 10px 30px rgba(245, 158, 11, 0.2) !important;
+      transform: scale(1.02);
+    }
+
+    .pricing-card.pro:hover {
+      transform: scale(1.04) translateY(-5px);
+      box-shadow: 0 15px 40px rgba(245, 158, 11, 0.3) !important;
+    }
+
+    /* Best Value Badge */
+    .best-value-badge {
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 10;
+    }
+
+    .best-value-badge .badge {
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 6px 14px;
+      border-radius: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.05);
+      }
+    }
+
+    /* Pricing Features List */
+    .pricing-card ul li {
+      font-size: 0.95rem;
+    }
+
+    .pricing-card ul li i {
+      font-size: 1.2rem;
+      flex-shrink: 0;
+    }
+
+    /* Pricing Button Hover Effects */
+    .pricing-card .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Responsive Pricing */
+    @media (max-width: 768px) {
+      .pricing-card.pro {
+        transform: scale(1);
+        margin-top: 1rem;
+      }
+
+      .pricing-card.pro:hover {
+        transform: scale(1.02) translateY(-5px);
+      }
+    }
